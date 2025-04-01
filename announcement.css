@@ -1,0 +1,107 @@
+/* General styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    background-color: #303030;
+    height: 100%;
+    overflow: hidden; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-right: 90px;
+}
+
+/* Announcements Section */
+.announcements-section {
+    padding: 10px 20px;  
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.announcement-card {
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 350px;
+    padding: 15px;
+    text-align: left;
+}
+
+.announcement-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.announcement-context {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.announcement-time {
+    font-size: 10px;
+    color: grey;
+    text-align: right;
+}
+
+/* Footer Navigation */
+footer {
+    background-color: white;
+    padding: 10px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    text-align: center;
+    flex: 1;
+}
+
+footer nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul li img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
