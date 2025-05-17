@@ -1,118 +1,117 @@
-/* Reset margin and padding for all elements */
-* {
+/* General styling */
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Body styling */
-  body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ensure the body takes up the full viewport height */
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  /* Main container */
-  .container {
-    background-color: #333;
-    color: white;
-    width: 100%;
-    height: 100%; /* Make the container take full height */
-    max-width: 375px; /* Fits the mobile screen */
-    border-radius: 15px;
+    height: 100%;
+    background-color: #303030;
+}
+
+/* Main container */
+.container {
     display: flex;
     flex-direction: column;
-  }
-  
-  /* Header with profile icon on the left side of 'WELCOME!' */
-  .header {
-    background-color: #444;
-    text-align: left;
-    display: flex;
-    align-items: center; /* Aligns the icon and text vertically */
+    justify-content: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 70px; /* For fixed footer space */
+}
+
+/* Header styling */
+.header {
+    text-align: center;
     padding: 20px;
-  }
-  
-  .profile-icon img {
-    width: 70px;
-    height: 70px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
-    margin-right: 15px; /* Adds space between icon and text */
-  }
-  
-  .header-text {
+    margin-right: 15px;
+}
+
+.header-text h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 5px 0 0 0;
+}
+
+/* Profile Information Section */
+.content {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-  
-  .header-text h1 {
-    font-size: 22px;
+    align-items: center;
+}
+
+.profile-info {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+}
+
+.profile-info h2 {
+    font-size: 18px;
     font-weight: bold;
-  }
-  
-  .header-text p {
-    font-size: 16px;
-    color: #aaa;
-  }
-  
-  /* Profile Information Section */
-  .content {
-    padding: 20px;
-    flex-grow: 1; /* Allow the content to take up remaining space */
-    overflow-y: auto; /* Allows scrolling if content overflows */
-  }
-  
-  .profile-info {
-    background-color: #555;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .profile-info h2 {
-    font-size: 20px;
     margin-bottom: 15px;
     text-align: center;
-  }
-  
-  .profile-info p {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  /* Footer with navigation links */
-  .footer {
-    background-color: #444;
-    padding: 15px 0;
-    flex-shrink: 0; /* Prevent footer from shrinking */
-  }
-  
-  .nav {
+}
+
+.profile-info p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer nav ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-  }
-  
-  .nav-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
     text-align: center;
-    color: white;
-    font-size: 14px;
+    flex: 1;
+}
+
+footer nav ul li a {
+    color: black;
     text-decoration: none;
-  }
-  
-  .nav-item img {
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
-  }
-  
-  .nav-item:hover {
-    color: #ddd;
-  }
-  
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul li img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
