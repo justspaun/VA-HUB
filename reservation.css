@@ -1,0 +1,131 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #303030;
+  height: 100vh;          /* Full viewport height */
+  overflow-x: hidden;
+  overflow-y: hidden;     /* Disable vertical scrolling */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;      /* Full viewport height */
+  padding: 20px;
+  padding-bottom: 70px;   /* for footer space */
+  max-width: 375px;
+  margin: auto;
+  overflow: hidden;       /* Prevent inner scrolling */
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-button {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.facility-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: grey;
+}
+
+.rent-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rent-link {
+  background-color: grey;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.history-button {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav ul li {
+  text-align: center;
+  flex: 1;
+}
+
+footer nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer nav ul li img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}

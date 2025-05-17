@@ -1,0 +1,196 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #303030;
+  height: 100vh;          /* Full viewport height */
+  overflow-x: hidden;
+  overflow-y: hidden;     /* Disable vertical scrolling */
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;      /* Full viewport height */
+  padding: 20px;
+  padding-bottom: 70px;   /* for footer space */
+  max-width: 375px;
+  margin: auto;
+  overflow: hidden;       /* Prevent inner scrolling */
+  text-align: center;
+  background-color: #333; /* from form container */
+  border-radius: 10px;
+}
+
+/* Titles */
+.title, h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Form elements */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  color: white;
+}
+
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Button styling */
+button {
+  display: block;
+  width: 80%;
+  padding: 8px;               /* smaller padding for smaller size */
+  background-color: white;    /* changed from #0d6efd to white */
+  color: black;               /* text color to black for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px; 
+  margin: 0 auto;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #e0e0e0;  /* light gray hover effect */
+}
+
+/* Reservation buttons container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reservation-button {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+}
+
+.facility-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: grey;
+}
+
+.rent-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rent-link {
+  background-color: grey;
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* History button */
+.history-button {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 80%;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer Navigation */
+footer {
+  background-color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav ul li {
+  text-align: center;
+  flex: 1;
+}
+
+footer nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer nav ul li img {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
