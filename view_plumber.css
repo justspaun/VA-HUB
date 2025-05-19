@@ -1,0 +1,156 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #303030; /* Dark background for the whole page */
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items at the top of the screen */
+  padding-bottom: 100px; /* To ensure space for the footer */
+}
+
+/* Header */
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+
+header h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: white;
+  text-align: center;
+}
+
+/* Plumber List */
+.plumber-list {
+  margin-top: 20px;
+}
+
+.plumber-card-container {
+  background-color: #444; /* Dark background for each plumber card */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.plumber-card {
+  display: flex; /* This enables flexbox within the plumber card */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: space-between; /* Space between text and button */
+}
+
+.plumber-card h3 {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.plumber-card p {
+  font-size: 12px;
+  color: white;
+  text-align: left;
+}
+
+.plumber-card button {
+  background-color: white;
+  color: black;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  align-self: flex-end;  /* Aligns the button to the right */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+/* Hover effect for button */
+.plumber-card button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Make sure <a> behaves like a block element */
+.button-link {
+  display: inline-block; /* Ensure <a> works properly */
+  width: fit-content;  /* Adjusts to button size */
+  margin-top: 10px;  /* Optional: Adds space between text and button */
+}
+
+
+/* Back Button */
+.back-button {
+  background-color: white; /* Grey button for back */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  position: relative; /* Make sure the button is positioned correctly */
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+footer {
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure it's above other content */
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    text-align: center;
+    flex: 1;
+}
+
+footer nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul li img {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}

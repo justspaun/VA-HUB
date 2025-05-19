@@ -1,0 +1,137 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #303030; /* Dark background */
+  color: white;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden; /* Disable vertical scrolling */
+}
+
+/* Titles */
+.title, h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+p {
+  font-size: 15px;
+  color: black;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  color: white;
+}
+
+/* Header styling */
+header {
+  background-color: #303030;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Main content area */
+.reports {
+  flex-grow: 1; /* Allow reports section to take up available space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  overflow-y: auto; /* Allow scrolling within reports */
+  max-height: calc(100% - 120px); /* Ensure it fits with footer */
+}
+
+/* Individual report card */
+.report {
+  background-color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.report h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.report p {
+  font-size: 12px;
+}
+
+/* Footer styling */
+footer {
+  background-color: white;
+  padding: 10px; /* Ensure it's the same padding as in ad-service.css */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it's above other content */
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer nav ul li {
+  text-align: center;
+  flex: 1;
+}
+
+footer nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav ul li img {
+  display: block;
+  width: 25px; /* Smaller icon, same size as in ad-service.css */
+  height: 25px; /* Matching height for icon size */
+  margin: 0 auto;
+  padding-bottom: 3px; /* Reduced padding to match ad-service.css */
+}

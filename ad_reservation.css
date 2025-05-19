@@ -1,0 +1,224 @@
+/* General Reset and Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #303030; /* Dark background */
+  color: white;
+  height: 100%; /* Make sure the body takes up full height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+/* Layout container */
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding-bottom: 60px; /* Give space for footer */
+}
+
+/* Main Title */
+h1 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* Reservation Card */
+.reservation-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Aligns content to the top */
+  align-items: flex-start; /* Aligns content to the left */
+  height: auto; /* Adjust height based on content */
+}
+
+/* Align h2 and p to the left */
+.reservation-card h2 {
+  align-self: flex-start; /* Align elements to the left */
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: black;
+}
+
+.reservation-card p {
+  align-self: flex-start; /* Align elements to the left */
+  margin: 0 0 0px;
+  color: black;
+  font-size: 12px;
+}
+
+/* Button Container */
+.btn-container {
+  display: flex;
+  justify-content: space-between; /* Horizontally space out buttons */
+  align-items: center; /* Vertically center buttons */
+  gap: 10px; /* Optional: Space between the buttons */
+  margin-top: 10px; /* Reduced margin-top for less space above the buttons */
+  width: 100%; /* Take up full width of the card */
+  max-width: 300px; /* Optional: Set max-width for button container */
+}
+
+/* Button Styles */
+button {
+  background-color: #5c5c5c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px; /* Smaller padding for smaller buttons */
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 40%; /* Smaller width for buttons */
+  font-size: 12px; /* Smaller font size */
+}
+
+/* Decline Button */
+button.decline {
+  background-color: #c0392b;
+}
+
+/* Accept Button */
+button.accept {
+  background-color: #27ae60;
+}
+
+/* Hover effect */
+button.accept:hover {
+  background-color: lightgreen;
+}
+
+button.decline:hover {
+  background-color: lightcoral;
+}
+
+/* Focus effect */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 150, 255, 0.8);
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  padding: 8px; /* Reduced padding for consistency with previous footers */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it's above other content */
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Ensure the navigation items take up the full width */
+}
+
+footer nav ul li {
+  text-align: center;
+  flex: 1;
+}
+
+footer nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 8px; /* Consistent font size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px 0; /* Reduced padding for compactness */
+}
+
+footer nav ul li img {
+  display: block;
+  width: 20px; /* Smaller icon to match the other footer */
+  height: 20px; /* Matching height for icon */
+  margin: 0 auto;
+  padding-bottom: 3px; /* Consistent padding with previous styles */
+}
+
+/* Titles */
+.title, h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+p {
+  font-size: 13px;
+  color: white;
+}
+
+/* Service Container */
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.service {
+  background-color: white; /* Slightly different shade for each service */
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative; /* To position buttons at the bottom right */
+  height: 75px; /* Adjust height as necessary */
+}
+
+.service span {
+  font-size: 16px;
+  color: black;
+  margin-right: auto;
+}
+
+.service .btn-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex; /* Use flexbox for horizontal alignment */
+  gap: 10px; /* Space between the buttons */
+}
+
+.btn {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #666;
+}
